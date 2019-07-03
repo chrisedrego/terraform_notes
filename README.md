@@ -14,10 +14,19 @@ This Repository contains the notes for terraform notes
 
 - IaaC Terraform Configuration can be shared with others.
 
-- 
+- Terraform files end with .tf
 
 - Install Terraform.
 https://www.terraform.io/downloads.html
 
 
+terraform has providers, providers are basically cloud providers like azure resource manager, and others as well.
 
+
+- terraform stages:
+Init: What its gonna look like
+Plan: Dry Run (Visualize) before doing see it
+Apply: Build the infrastructure that we planned and apply
+
+- So basically if we want to configure the infrastructure the ways to configure it is by using the GUI for that cloud provider but with terraform we can go over the minor details of the configuration and specify the details in the .tf file and then apply the same.
+- So that we get a live env, setup.
