@@ -12,4 +12,12 @@ This Repository contains the notes for terraform notes
 
 - Multiple Provider: Terraform has various providers: Azure, AWS, Google.
 
+- IaaC Terraform Configuration can be shared with others.
+
 - 
+
+- Install Terraform.
+https://www.terraform.io/downloads.html
+
+
+
