@@ -3,6 +3,17 @@ This Repository contains the notes for terraform notes
 
 
 - Terraform is used for cloud provision.
+- Terraform is used to Ochestration or for creation of server.
+
+- Terraform takes into account the current state of the environment.
+State managment: using terraform.tfstate”
+
+- What if it fails? it will mark the one which is failed as tainted.
+
+terraform is used for...
+Create (+)
+Modify (~)
+Delete (-)
 
 - Terraform is statefull meaning that it will compare the current state, and then would do the changes based on it.
 
@@ -70,4 +81,36 @@ In this case, we havent configured a default value in that case the terraform wo
 variable "NAME" {
  [CONFIG ...]
 }
+
+$ terraform apply
+var.server_name
+  This variable is used to store details of the Server Configuration
+  Enter a value:
+  <--- In this way, its gonna ask the value.
+  
+  
+  terraform apply -var "server_name=test_server" <-- This is how we can send the value at the run time
+  
+- To use the Variables in the terraform file.
+Variables can be used in the terraform file using the variable reference
+var.<VARIABLE_NAME>
+
+Output Variables:
+Similiar to input variables we also have the output variables which are used to display the value.
+
+output "server_name" {
+  value       = test_server_name
+  description = "The name of the Server"
+}
+
+Output Variables contain the following stuff:
+- value
+- description
+- sensitive: if its set to true then the value wont be displayed on the screen.
+
+How to output all the outputs:
+terraform output --> This will be used to display all the values.
+
+
+
 
