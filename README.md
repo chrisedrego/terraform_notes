@@ -111,6 +111,44 @@ Output Variables contain the following stuff:
 How to output all the outputs:
 terraform output --> This will be used to display all the values.
 
+Infrastructure is core building block on which application are constructed.
 
+Terraform is declarative.
+What does it mean when we say terraform is declarative, basically we say that.
+Hey, I have the CPU to two CPUs with 4GB RAM and Ubuntu OS installed on it.
+
+While the procedural one includes going ahead say...
+Create vm using the management tool with the help of this, click on Create VM, select 1CPU and 4GB as RAM and blah balh!!!
+
+In this case basically with the help of Terraform which is declarative we make terraform resposible for doing all the needed changes as needed in order to build-up the whole infrastructure and environment for us.
+
+Terraform - and the end state
+Terraform helps you focus on what the planned end state should look like, rather than the intricute detail which are needed.
+
+Terraform - Graph-based approach.
+Whatever resource that we define as well as the configuration terraform does the rest of it and doesnt need the extra effort it does the underlying stuff needed, resource have  dependency so it goes ahead and maps the resource with their respective dependencies.
+
+Terraform is build by Hashicorp
+
+Terraform is not configuration managment?
+tools like chef, puppet ansible are configuration managemnt.
+Terraform is something which is used to provision and build the server and netwok and infrastructure.
+
+Unified environments accross different stages.
+with the help of terraform we can make sure that all the environment have the same configuration as the infrastructure is now in the form of code, this makes sure that there is consistency.
+
+Shareable
+As the infrastructure is now in the form of code, it ensures that the
+
+How much of mess is needed to install and configure it on your computer?
+No fuzz, it will just be needed to go ahead and download the binary from the official terraform portal or using package management tools like chocolatey or brew
+
+Terraform is technological + vendor + provider + ... Neutral, terraform isnt just binded to one specific vendor or provider
+
+Terraform has some stages:
+- init (get ready with all the required dependencies and provider based configuration)
+- plan (before applying the changes it will show what changes will be perforemd on it)
+- apply (Applying the changes to the Infrastructure)
+- destroy (Destroy the chagnes made by terraform to the infrastructure)
 
 
