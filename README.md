@@ -151,4 +151,13 @@ Terraform has some stages:
 - apply (Applying the changes to the Infrastructure)
 - destroy (Destroy the chagnes made by terraform to the infrastructure)
 
+.tf or .tf.json --> These are files used by terraform
+
+
+HCL Language. (Human Readable and easy to understand)
+.tf.json (Machine, a bit complex , even user can write the json file but for easy you can go along with HCL as well)
+
+/*  Multi-Line Comments are supported in terraform */
+// Single Line Comments as  well are support ed in terraform
+
 
