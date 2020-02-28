@@ -1,3 +1,5 @@
 authentication.sh
 lock.json
 .terraform
+*.tfstate*
+*.terraform
